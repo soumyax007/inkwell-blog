@@ -1,0 +1,219 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Blog — Inkwell</title>
+  <link rel="stylesheet" href="../css/style.css" />
+</head>
+<body>
+
+  <input type="checkbox" id="theme-toggle" />
+  <input type="checkbox" id="nav-toggle-check" />
+
+  <!-- HEADER  -->
+  <header class="site-header">
+    <div class="header-inner">
+      <a href="../index.html" class="site-logo">Inkwell</a>
+
+      <nav aria-label="Main navigation">
+        <ul class="nav-menu">
+          <li><a href="../index.html">Home</a></li>
+          <li><a href="blog.html" class="active">Blog</a></li>
+          <li><a href="about.html">About</a></li>
+          <li><a href="contact.html">Contact</a></li>
+        </ul>
+      </nav>
+
+      <label class="theme-label" for="theme-toggle" aria-label="Toggle dark mode">
+        <div class="theme-pill"></div>
+        <span class="theme-text">theme</span>
+      </label>
+
+      <label class="nav-hamburger" for="nav-toggle-check" aria-label="Open menu">
+        <span></span><span></span><span></span>
+      </label>
+    </div>
+  </header>
+
+  <!--  MAIN  -->
+  <main>
+    <div class="container">
+
+      <div class="page-header">
+        <span class="section-label">All posts</span>
+        <h1>The Blog</h1>
+        <p style="color:var(--ink-faint); font-size:0.95rem; margin:0;">
+          Essays, opinions, and occasional tutorials. Updated irregularly.
+        </p>
+      </div>
+
+      <div class="posts-list">
+
+        <!-- Post 1 -->
+        <article class="post-row" id="post-1">
+          <div class="post-row-image">
+            <img src="https://images.unsplash.com/photo-1519389950473-47ba0277781c?w=600&auto=format&fit=crop" alt="Laptops on desk" width="600" height="450" />
+          </div>
+          <div class="post-row-body">
+            <span class="card-category">Design</span>
+            <h2><a href="#post-1">Why Constraints Make Better Designers</a></h2>
+            <p>
+              Having infinite options is the enemy of good decisions. The best work I have
+              ever done came from a brief with only three sentences and a tight deadline.
+              When you cannot rely on tools, templates, or time, you have to rely on ideas.
+              That is where design actually lives.
+            </p>
+            <blockquote>
+              <p>A blank canvas is not freedom — it is paralysis with good lighting.</p>
+            </blockquote>
+            <p>
+              I spent a summer working at a tiny studio that had one license for one design
+              application and a shared laptop that overheated. We shipped three projects that
+              quarter. None of them looked like they came from a budget-constrained team.
+              They looked like they came from people who had to think.
+            </p>
+            <div class="post-row-meta">
+              <span>Soumya</span><span>·</span>
+              <span>June 12, 2025</span><span>·</span>
+              <span>6 min read</span>
+            </div>
+          </div>
+        </article>
+
+        <!-- Post 2 -->
+        <article class="post-row" id="post-2">
+          <div class="post-row-image">
+            <img src="https://images.unsplash.com/photo-1555066931-4365d14bab8c?w=600&auto=format&fit=crop" alt="Code editor" width="600" height="450" />
+          </div>
+          <div class="post-row-body">
+            <span class="card-category">Code</span>
+            <h2><a href="#post-2">CSS Grid Is Still Underused</a></h2>
+            <p>
+              Most developers I know reach for Flexbox before they have even finished reading
+              the design file. And most of the time it works — sort of. You get the columns,
+              you get the spacing, but you also get a cascade of nested divs and a layout that
+              breaks on exactly one screen size you forgot to test.
+            </p>
+            <p>
+              CSS Grid was designed for two-dimensional layouts. That sounds obvious, but it
+              changes how you think. Instead of stacking flex containers, you describe the
+              whole layout up front. The browser handles placement. Your HTML gets flatter.
+              Your CSS gets shorter. Your sleep gets longer.
+            </p>
+            <div class="post-row-meta">
+              <span>Soumya</span><span>·</span>
+              <span>May 28, 2025</span><span>·</span>
+              <span>8 min read</span>
+            </div>
+          </div>
+        </article>
+
+        <!-- Post 3 -->
+        <article class="post-row" id="post-3">
+          <div class="post-row-image">
+            <img src="https://images.unsplash.com/photo-1481627834876-b7833e8f5570?w=600&auto=format&fit=crop" alt="Books stacked" width="600" height="450" />
+          </div>
+          <div class="post-row-body">
+            <span class="card-category">Books</span>
+            <h2><a href="#post-3">Reading Slowly on Purpose</a></h2>
+            <p>
+              At some point in the last few years I started tracking how many books I read
+              per year, which immediately turned reading into a sport I was losing. Speed
+              matters in sports. In books it mostly just means you remember less.
+            </p>
+            <p>
+              I tried an experiment last winter: I gave myself one book for the whole month
+              of December. Chekhov's collected stories. I took notes in the margins, looked
+              up words I skipped past, reread paragraphs that did something unusual. I finished
+              eleven stories. I can still tell you what each one was about.
+            </p>
+            <div class="post-row-meta">
+              <span>Soumya</span><span>·</span>
+              <span>May 10, 2025</span><span>·</span>
+              <span>5 min read</span>
+            </div>
+          </div>
+        </article>
+
+        <!-- Post 4 -->
+        <article class="post-row" id="post-4">
+          <div class="post-row-image">
+            <img src="https://images.unsplash.com/photo-1506905925346-21bda4d32df4?w=600&auto=format&fit=crop" alt="Mountains in Spiti" width="600" height="450" />
+          </div>
+          <div class="post-row-body">
+            <span class="card-category">Travel</span>
+            <h2><a href="#post-4">Spiti Valley Without a Plan</a></h2>
+            <p>
+              We decided to go to Spiti Valley eleven days before we left. No hotel bookings.
+              No confirmed return route. A shared backpack between two people and the
+              understanding that we would figure things out. We got to Kaza at 2 AM with
+              the temperature at minus four and a guest house owner who woke up only after
+              we knocked for ten minutes. He made us tea. We stayed for four days.
+            </p>
+            <p>
+              The roads in Spiti are the kind that remind you a road is a recent invention.
+              The mountains are not interested in you. That indifference is, somehow,
+              the whole point.
+            </p>
+            <div class="post-row-meta">
+              <span>Soumya</span><span>·</span>
+              <span>April 3, 2025</span><span>·</span>
+              <span>9 min read</span>
+            </div>
+          </div>
+        </article>
+
+        <!-- Post 5 -->
+        <article class="post-row" id="post-5">
+          <div class="post-row-image">
+            <img src="https://images.unsplash.com/photo-1461749280684-dccba630e2f6?w=600&auto=format&fit=crop" alt="Keyboard closeup" width="600" height="450" />
+          </div>
+          <div class="post-row-body">
+            <span class="card-category">Productivity</span>
+            <h2><a href="#post-5">The Problem With Productivity Advice</a></h2>
+            <p>
+              Every productivity system I have ever tried was invented by someone who wakes
+              up at 5 AM voluntarily. I do not wake up at 5 AM voluntarily. I have tried.
+              The outcome is just a worse version of me who is also tired.
+            </p>
+            <p>
+              The deeper issue is that most productivity advice is really lifestyle advice in
+              disguise. It is telling you who to be, not how to get things done. What actually
+              works is embarrassingly personal and usually not worth writing a book about.
+            </p>
+            <div class="post-row-meta">
+              <span>Soumya</span><span>·</span>
+              <span>March 19, 2025</span><span>·</span>
+              <span>4 min read</span>
+            </div>
+          </div>
+        </article>
+
+      </div>
+    </div>
+  </main>
+
+  <!-- ══ FOOTER ══ -->
+  <footer class="site-footer">
+    <div class="container">
+      <div class="footer-inner">
+        <div>
+          <div class="footer-brand">Inkwell</div>
+          <p class="footer-tagline">Essays on design, code &amp; everyday life.</p>
+        </div>
+        <nav aria-label="Footer navigation">
+          <ul class="footer-nav">
+            <li><a href="../index.html">Home</a></li>
+            <li><a href="blog.html">Blog</a></li>
+            <li><a href="about.html">About</a></li>
+            <li><a href="contact.html">Contact</a></li>
+          </ul>
+        </nav>
+      </div>
+      <p class="footer-copy">© 2025 soumya Built for  Fundamentals of Web Design.</p>
+    </div>
+  </footer>
+
+</body>
+</html>

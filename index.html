@@ -1,0 +1,170 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Inkwell — A Personal Blog</title>
+  <link rel="stylesheet" href="css/style.css" />
+</head>
+<body>
+
+  <!--
+    Two hidden checkboxes at the top of <body>.
+    #theme-toggle  → drives dark/light mode via html:has(#theme-toggle:checked)
+    #nav-toggle-check → drives mobile menu via sibling combinator
+    Zero JavaScript anywhere on this site.
+  -->
+  <input type="checkbox" id="theme-toggle" />
+  <input type="checkbox" id="nav-toggle-check" />
+
+  <!--  HEADER  -->
+  <header class="site-header">
+    <div class="header-inner">
+      <a href="index.html" class="site-logo">Inkwell</a>
+
+      <nav aria-label="Main navigation">
+        <ul class="nav-menu">
+          <li><a href="index.html" class="active">Home</a></li>
+          <li><a href="./ASSETS/blog.html">Blog</a></li>
+          <li><a href="./ASSETS/about.html">About</a></li>
+          <li><a href="./ASSETS/contact.html">Contact</a></li>
+        </ul>
+      </nav>
+
+      <!-- Theme toggle pill -->
+      <label class="theme-label" for="theme-toggle" aria-label="Toggle dark mode">
+        <div class="theme-pill"></div>
+        <span class="theme-text">theme</span>
+      </label>
+
+      <!-- Mobile hamburger -->
+      <label class="nav-hamburger" for="nav-toggle-check" aria-label="Open menu">
+        <span></span><span></span><span></span>
+      </label>
+    </div>
+  </header>
+
+  <!-- ══ HERO ══ -->
+  <section class="hero">
+    <div class="hero-content">
+      <span class="hero-eyebrow">Est. 2025 &middot; Personal Journal</span>
+      <h1 class="hero-title">Writing is thinking<br>made visible.</h1>
+      <p class="hero-subtitle">
+        A corner of the internet for essays on design, code, books, and the quiet work of paying attention.
+      </p>
+      <a href="blog.html" class="btn btn-primary">Browse all posts</a>
+    </div>
+  </section>
+
+  <!--  POSTS GRID  -->
+  <main>
+    <div class="container">
+      <section class="posts-section">
+        <span class="section-label">Recent posts</span>
+
+        <div class="posts-grid">
+
+          <article class="card">
+            <div class="card-image-wrap">
+              <img src="https://images.unsplash.com/photo-1519389950473-47ba0277781c?w=900&auto=format&fit=crop" alt="Laptops on a desk" width="900" height="500" />
+            </div>
+            <div class="card-body">
+              <span class="card-category">Design</span>
+              <h2 class="card-title"><a href="blog.html#post-1">Why Constraints Make Better Designers</a></h2>
+              <p class="card-excerpt">Having infinite options is the enemy of good decisions. The best work I have ever done came from a three-sentence brief and a tight deadline.</p>
+              <div class="card-meta">
+                <span>Soumya</span><span class="dot"></span>
+                <span>June 12, 2025</span><span class="dot"></span>
+                <span>6 min read</span>
+              </div>
+            </div>
+          </article>
+
+          <article class="card">
+            <div class="card-image-wrap">
+              <img src="https://images.unsplash.com/photo-1555066931-4365d14bab8c?w=600&auto=format&fit=crop" alt="Code on monitor" width="600" height="400" />
+            </div>
+            <div class="card-body">
+              <span class="card-category">Code</span>
+              <h2 class="card-title"><a href="blog.html#post-2">CSS Grid Is Still Underused</a></h2>
+              <p class="card-excerpt">Most developers reach for Flexbox out of habit. Grid was built for exactly the layout problems we keep hacking around.</p>
+              <div class="card-meta">
+                <span>Soumya</span><span class="dot"></span><span>May 28, 2025</span>
+              </div>
+            </div>
+          </article>
+
+          <article class="card">
+            <div class="card-image-wrap">
+              <img src="https://images.unsplash.com/photo-1481627834876-b7833e8f5570?w=600&auto=format&fit=crop" alt="Stack of books" width="600" height="400" />
+            </div>
+            <div class="card-body">
+              <span class="card-category">Books</span>
+              <h2 class="card-title"><a href="blog.html#post-3">Reading Slowly on Purpose</a></h2>
+              <p class="card-excerpt">Speed-reading strips a book of everything worth keeping. Some books deserve to take three weeks.</p>
+              <div class="card-meta">
+                <span>Soumya</span><span class="dot"></span><span>May 10, 2025</span>
+              </div>
+            </div>
+          </article>
+
+          <article class="card">
+            <div class="card-image-wrap">
+              <img src="https://images.unsplash.com/photo-1506905925346-21bda4d32df4?w=600&auto=format&fit=crop" alt="Mountain landscape" width="600" height="400" />
+            </div>
+            <div class="card-body">
+              <span class="card-category">Travel</span>
+              <h2 class="card-title"><a href="blog.html#post-4">Spiti Valley Without a Plan</a></h2>
+              <p class="card-excerpt">No hotel bookings, no rigid itinerary, no idea where we would sleep in Kaza. It was the best trip I have taken.</p>
+              <div class="card-meta">
+                <span>Soumya</span><span class="dot"></span><span>April 3, 2025</span>
+              </div>
+            </div>
+          </article>
+
+          <article class="card">
+            <div class="card-image-wrap">
+              <img src="https://images.unsplash.com/photo-1461749280684-dccba630e2f6?w=600&auto=format&fit=crop" alt="Keyboard closeup" width="600" height="400" />
+            </div>
+            <div class="card-body">
+              <span class="card-category">Productivity</span>
+              <h2 class="card-title"><a href="blog.html#post-5">The Problem With Productivity Advice</a></h2>
+              <p class="card-excerpt">Every system that works for someone else is a system built for someone else's brain, schedule, and problems.</p>
+              <div class="card-meta">
+                <span>Soumya </span><span class="dot"></span><span>March 19, 2025</span>
+              </div>
+            </div>
+          </article>
+
+        </div>
+
+        <div style="text-align:center; margin-top:3rem;">
+          <a href="blog.html" class="btn btn-outline">View all posts</a>
+        </div>
+      </section>
+    </div>
+  </main>
+
+  <!--  FOOTER  -->
+  <footer class="site-footer">
+    <div class="container">
+      <div class="footer-inner">
+        <div>
+          <div class="footer-brand">Inkwell</div>
+          <p class="footer-tagline">Essays on design, code &amp; everyday life.</p>
+        </div>
+        <nav aria-label="Footer navigation">
+          <ul class="footer-nav">
+            <li><a href="index.html">Home</a></li>
+            <li><a href="./ASSETS/blog.html">Blog</a></li>
+            <li><a href="./ASSETS/about.html">About</a></li>
+            <li><a href="./ASSETS/about.html">Contact</a></li>
+          </ul>
+        </nav>
+      </div>
+      <p class="footer-copy">© 2025 Soumya. Built for  Fundamentals of Web Design.</p>
+    </div>
+  </footer>
+
+</body>
+</html>

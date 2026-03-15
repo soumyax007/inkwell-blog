@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Contact — Inkwell</title>
+  <link rel="stylesheet" href="../css/style.css" />
+</head>
+<body>
+
+  <input type="checkbox" id="theme-toggle" />
+  <input type="checkbox" id="nav-toggle-check" />
+
+  <!-- ══ HEADER ══ -->
+  <header class="site-header">
+    <div class="header-inner">
+      <a href="../index.html" class="site-logo">Inkwell</a>
+
+      <nav aria-label="Main navigation">
+        <ul class="nav-menu">
+          <li><a href="../index.html">Home</a></li>
+          <li><a href="blog.html">Blog</a></li>
+          <li><a href="about.html">About</a></li>
+          <li><a href="contact.html" class="active">Contact</a></li>
+        </ul>
+      </nav>
+
+      <label class="theme-label" for="theme-toggle" aria-label="Toggle dark mode">
+        <div class="theme-pill"></div>
+        <span class="theme-text">theme</span>
+      </label>
+
+      <label class="nav-hamburger" for="nav-toggle-check" aria-label="Open menu">
+        <span></span><span></span><span></span>
+      </label>
+    </div>
+  </header>
+
+  <!-- ══ MAIN ══ -->
+  <main>
+    <div class="container">
+      <div class="contact-layout">
+
+        <!-- Form -->
+        <div>
+          <div class="page-header" style="padding-top:3.5rem;">
+            <span class="section-label">Get in touch</span>
+            <h1>Say hello.</h1>
+            <p style="color:var(--ink-faint); margin-top:0.5rem;">
+              I reply to everything — usually within a couple of days.
+            </p>
+          </div>
+
+          <!--
+            Pure HTML form — no JS.
+            action="#" keeps it local; a real site would point to a backend or service.
+            The :focus / :hover / :valid states are handled entirely in CSS.
+          -->
+          <div class="contact-form">
+
+            <div class="form-group">
+              <label for="name">Your name</label>
+              <input type="text" id="name" name="name" placeholder="Name" autocomplete="name" required />
+            </div>
+
+            <div class="form-group">
+              <label for="email">Email address</label>
+              <input type="email" id="email" name="email" placeholder="email" autocomplete="email" required />
+            </div>
+
+            <div class="form-group">
+              <label for="subject">Subject</label>
+              <input type="text" id="subject" name="subject" placeholder="What is this about?" />
+            </div>
+
+            <div class="form-group">
+              <label for="message">Message</label>
+              <textarea id="message" name="message" placeholder="Write something thoughtful..." required></textarea>
+            </div>
+
+            <div class="form-submit-wrap">
+              <button type="submit" class="btn btn-primary">Send message</button>
+              <span class="form-note">No spam, no newsletter. Just a reply.</span>
+            </div>
+
+          </div>
+        </div>
+
+        <!-- Sidebar info -->
+        <aside style="padding-top:3.5rem;">
+          <div style="background:var(--surface); border:1px solid var(--rule); border-radius:var(--radius); padding:2rem;">
+            <h3 style="margin-bottom:1.5rem;">Other ways to reach me</h3>
+            <ul class="contact-info-list">
+              <li>
+                <span class="ci-label">Email</span>
+                <span class="ci-value"><a href="mailto:soumyadipdebnath20@example.com">soumyadipdebnath20@gmail.com</a></span>
+              </li>
+              <li>
+                <span class="ci-label">Instagram</span>
+                <span class="ci-value"><a href="https://www.instagram.com/soumyadzm/">@soumyadzm</a></span>
+              </li>
+              <li>
+                <span class="ci-label">GitHub</span>
+                <span class="ci-value"><a href="https://github.com/soumyax007">github.com/soumyax007</a></span>
+              </li>
+              <li>
+                <span class="ci-label">Location</span>
+                <span class="ci-value"><a href="https://www.google.com/maps/place/New+Delhi,+Delhi/@28.5590721,77.0508611,11.02z/data=!4m6!3m5!1s0x390cfd5b347eb62d:0x52c2b7494e204dce!8m2!3d28.6139298!4d77.2088282!16zL20vMGRsdjA?entry=ttu&g_ep=EgoyMDI2MDMxMS4wIKXMDSoASAFQAw%3D%3D">Delhi, India</a></span>
+              </li>
+            </ul>
+
+            <hr class="rule" />
+
+            <p style="font-size:0.84rem; color:var(--ink-faint); margin:0;">
+              I am usually online in the evenings IST. If something is urgent, email is the fastest way to reach me.
+            </p>
+          </div>
+
+          <div style="margin-top:2rem;">
+            <h4 style="margin-bottom:0.75rem; font-size:1rem;">What I will respond to</h4>
+            <ul style="font-size:0.87rem; color:var(--ink-faint);">
+              <li>Corrections or pushback on something I wrote</li>
+              <li>Questions about web development</li>
+              <li>Book recommendations</li>
+              <li>Anything interesting, honestly</li>
+            </ul>
+          </div>
+        </aside>
+
+      </div>
+    </div>
+  </main>
+
+  <!-- FOOTER  -->
+  <footer class="site-footer">
+    <div class="container">
+      <div class="footer-inner">
+        <div>
+          <div class="footer-brand">Inkwell</div>
+          <p class="footer-tagline">Essays on design, code &amp; everyday life.</p>
+        </div>
+        <nav aria-label="Footer navigation">
+          <ul class="footer-nav">
+            <li><a href="../index.html">Home</a></li>
+            <li><a href="blog.html">Blog</a></li>
+            <li><a href="about.html">About</a></li>
+            <li><a href="contact.html">Contact</a></li>
+          </ul>
+        </nav>
+      </div>
+      <p class="footer-copy">© 2025 Soumya. Built for  Fundamentals of Web Design.</p>
+    </div>
+  </footer>
+
+</body>
+</html>
